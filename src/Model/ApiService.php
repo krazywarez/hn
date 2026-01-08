@@ -8,7 +8,7 @@ namespace HN\Models;
  * @access public
  * @param string $api_url The API endpoint to use for extraction
  * @return mixed The API results formatted into an HTML section
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function GetApiResults(string $api_url): mixed
 {
@@ -23,7 +23,7 @@ function GetApiResults(string $api_url): mixed
  * @param mixed $api_results The decoded API results
  * @param string $inline_title The <h1> title to use in the HTML
  * @return string $html_output The formatted HTML result of stories from the API or the error message
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function ParseStories(mixed $api_results, string $inline_title): string
 {
@@ -47,7 +47,7 @@ function ParseStories(mixed $api_results, string $inline_title): string
  * @param mixed $api_results The decoded API results
  * @param string $inline_title The <h1> title to use in the HTML
  * @return string $html_output The formatted HTML result of stories from the API
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function ParseUser(mixed $api_results, string $inline_title): string
 {
@@ -94,7 +94,7 @@ function ParseUser(mixed $api_results, string $inline_title): string
  * @param mixed $api_results The decoded API results
  * @param string $inline_title The <h1> title to use in the HTML
  * @return string $html_output The formatted HTML result of stories from the API or the error message
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function ParseItem(mixed $api_results): string
 {
@@ -132,7 +132,7 @@ function ParseItem(mixed $api_results): string
  * @access public
  * @param mixed $api_results The decoded API results
  * @return string The formatted HTML result of stories from the API or the error message
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function GetItem(mixed $api_results): string
 {
@@ -154,7 +154,7 @@ function GetItem(mixed $api_results): string
  * @access public
  * @param mixed $api_results The decoded API results
  * @return string The formatted HTML result of stories from the API or the error message
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function ConstructStory(mixed $api_results): string
 {
@@ -189,7 +189,7 @@ function ConstructStory(mixed $api_results): string
  * @access public
  * @param mixed $api_results The decoded API results
  * @return string The formatted HTML result of stories from the API or the error message
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function ConstructStoryDiscussion(mixed $api_results): string
 {
@@ -241,7 +241,7 @@ function ConstructStoryDiscussion(mixed $api_results): string
  * @access public
  * @param mixed $api_results The decoded API results
  * @return string The formatted HTML result of stories from the API or the error message
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function ConstructComment(mixed $api_results): string
 {
@@ -265,7 +265,7 @@ function ConstructComment(mixed $api_results): string
  * @access public
  * @param mixed $api_results The decoded API results
  * @return string The formatted HTML result of stories from the API or the error message
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function ConstructPoll(mixed $api_results): string
 {
@@ -278,7 +278,7 @@ function ConstructPoll(mixed $api_results): string
  * @access public
  * @param mixed $api_results The decoded API results
  * @return string The formatted HTML result of stories from the API or the error message
- * @author Christian Cleberg <hello@cmc.pub>
+ * @author Christian Cleberg <hello@cleberg.net>
  */
 function ConstructPollOpt(mixed $api_results): string
 {
