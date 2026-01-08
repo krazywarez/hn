@@ -26,7 +26,7 @@
 </main>
 
 <footer>
-    <p><a href="https://sr.ht/~cmc/hn/">Source Code</a></p>
+    <p><a href="https://git.cleberg.net/hn.git">Source Code</a></p>
     <p>Copyright &copy; 2023 - <?php echo $this->current_year; ?></p>
 </footer>
 
