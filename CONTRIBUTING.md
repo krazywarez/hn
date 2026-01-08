@@ -6,7 +6,7 @@ This project really only has a few guidelines to follow:
 
 - Focus on the end-user's privacy and experience.
 - Keep the codebase minimal and, ideally, package-free.
-- Follow the [PHP Style Guide](https://gist.github.com/ryansechrest/8138375).
+- Follow the [PEP 8](https://peps.python.org/pep-0008/) style guide.
 
 ## Reporting Bugs
 
