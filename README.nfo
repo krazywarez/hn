@@ -1,0 +1,51 @@
+┌──────────────────────────────────────────────────────────────┐
+│  H N                                       [ KRZ ]   krz.sh  │
+└──────────────────────────────────────────────────────────────┘
+
+WHAT
+  front-end alternative for hacker news. php. no tracking.
+
+REQUIRES
+  a web server (nginx or apache), php 8.0+, optional minify.
+
+INSTALL
+      sudo apt install nginx-full php php-cgi php-fpm minify
+      git clone $repo_url
+
+  minify css after changes:
+
+      minify -o static/styles.min.css static/styles.css
+
+DEPLOY
+  copy the code to your webroot. route all errors to index.php.
+
+  nginx:
+
+      location / {
+          try_files $uri $uri/ /index.php?$args;
+      }
+
+  apache (.htaccess):
+
+      FallbackResource /index.php
+
+BUILT WITH
+  php, html, minify (for css).
+
+TODO
+  - recursive descendant comment threads
+  - polls (ConstructPoll)
+  - pagination / load more
+
+CONTRIBUTING
+  see CONTRIBUTING.txt and CODE_OF_CONDUCT.txt.
+
+VERSIONING
+  none. read the git log.
+
+LICENSE
+  0bsd. see LICENSE.md.
+
+┌──────────────────────────────────────────────────────────────┐
+│  krz.sh                                                      │
+└──────────────────────────────────────────────────────────────┘
